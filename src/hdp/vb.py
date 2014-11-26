@@ -49,7 +49,7 @@ class VariationalBayes(object):
         self._V = len(self._vocab)
 
         # initialize a V-by-K matrix phi, valued at random.
-        self._phi = numpy.random.random(self._V, self._K);
+        self._phi = numpy.random.random((self._V, self._K));
         assert(self._phi.shape == (self._V, self._K));
         
         # initialize a (K-1)-by-2 matrix gamma, valued at random.
